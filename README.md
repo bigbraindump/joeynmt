@@ -195,6 +195,11 @@ model_dir/
 > Be careful not to overwrite `model_dir`, set `overwrite: False` in the config file.
 
 
+#### training pre- and post- normalisation
+
+Make sure to adjust the 'layer_norm' parameter in the joeynmt/encoders.py, joeynmt/decoders.py and joeynmt/transformer_layers.py files.
+Change the name of the model in configs/transformer_small.yaml to reflect normalisationa applied.
+
 
 ### `test` mode
 This mode will generate translations for validation and test set (as specified in the
